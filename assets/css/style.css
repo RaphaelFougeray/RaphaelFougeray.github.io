@@ -1102,7 +1102,7 @@ main {
   pointer-events: none;
 }
 
-.project-item:hover .project-img::before {
+.project-img:hover::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
 
