@@ -163,28 +163,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // Lightbox
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("click", function (e) {
+
+  const img = e.target.closest(".project-img img");
+
+  if (!img) return;
+
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".lightbox-close");
 
-  document.querySelectorAll(".project-img img").forEach(img => {
-    img.addEventListener("click", function () {
-      console.log("CLICK OK");
-      lightbox.style.display = "block";
-      lightboxImg.src = this.src;
-    });
-  });
+  console.log("CLICK OK");
 
-  closeBtn.onclick = function () {
-    lightbox.style.display = "none";
-  };
+  lightbox.style.display = "block";
+  lightboxImg.src = img.src;
 
-  lightbox.onclick = function (e) {
-    if (e.target !== lightboxImg) {
-      lightbox.style.display = "none";
-    }
-  };
 });
+
+// Close button
+document.querySelector(".lightbox-close").onclick = function () {
+  document.getElementById("lightbox").style.display = "none";
+};
+
+// Click outside
+document.getElementById("lightbox").onclick = function (e) {
+  if (e.target.id === "lightbox") {
+    this.style.display = "none";
+  }
+};
 
 console.log("JS chargé");
