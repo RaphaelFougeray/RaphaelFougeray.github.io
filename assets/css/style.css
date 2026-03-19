@@ -547,6 +547,8 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about-text p {
@@ -835,11 +837,13 @@ main {
   height: auto;
   object-fit: contain;
   filter: none;
-  transition: var(--transition-1);
+  transition: transform 0.25s ease-in-out;
+  will-change: transform;
 }
 
 .clients-item img:hover {
-  filter: grayscale(0);
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 
