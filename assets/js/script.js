@@ -169,8 +169,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".lightbox-close");
 
   document.querySelectorAll(".project-img img").forEach(img => {
-    img.addEventListener("click", function (e) {
-      e.preventDefault();
+    img.addEventListener("click", function () {
+      console.log("CLICK OK");
       lightbox.style.display = "block";
       lightboxImg.src = this.src;
     });
@@ -186,3 +186,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+console.log("JS chargé");
