@@ -1102,6 +1102,7 @@ main {
   background: transparent;
   z-index: 1;
   transition: var(--transition-1);
+  pointer-events: none;
 }
 
 .project-item:hover .project-img::before {
@@ -1123,6 +1124,7 @@ main {
   opacity: 0;
   z-index: 1;
   transition: var(--transition-1);
+  pointer-events: none;
 }
 
 .project-item:hover .project-item-icon-box {
@@ -1139,6 +1141,8 @@ main {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
+  position: relative;
+  z-index: 2;
 }
 
 .project-item:hover img {
