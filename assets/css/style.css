@@ -976,13 +976,10 @@ main {
   border-radius: inherit;
 }
 
-.skills {
+.skill {
   margin-bottom: 30px;
 }
 
-.skills+.timeline {
-  margin-top: 40px;
-}
 
 
 /*-----------------------------------*\
