@@ -807,12 +807,15 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 5px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
+  justify-content: center;
+  /* ou flex-start */
+  align-items: center;
+  gap: 10px;
+  /* ajuste ici */
+  padding: 10px;
+  /* réduit fortement */
+  margin: 0;
+  /* supprime le hack */
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -831,7 +834,7 @@ main {
   width: 200px;
   height: auto;
   object-fit: contain;
-  filter: grayscale(1);
+  filter: none;
   transition: var(--transition-1);
 }
 
@@ -871,11 +874,10 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
-  padding-left: 20px;
 }
 
 .timeline-list li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .timeline-item {
@@ -974,7 +976,9 @@ main {
   margin-bottom: 30px;
 }
 
-
+.skills+.timeline {
+  margin-top: 40px;
+}
 
 
 /*-----------------------------------*\
