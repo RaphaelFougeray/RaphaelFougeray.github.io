@@ -365,8 +365,6 @@ main {
   border: 2px solid var(--orange-yellow-crayola);
   border-radius: 50px;
   overflow: hidden;
-  width: 120px;
-  height: 120px;
 }
 
 .info-content .name {
@@ -813,15 +811,12 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: center;
-  /* ou flex-start */
-  align-items: center;
-  gap: 10px;
-  /* ajuste ici */
-  padding: 10px;
-  /* réduit fortement */
-  margin: 0;
-  /* supprime le hack */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
   overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
@@ -830,15 +825,12 @@ main {
 }
 
 .clients-item {
-  min-width: auto;
+  min-width: 50%;
   scroll-snap-align: start;
 }
 
 .clients-item img {
-  max-width: 300px;
-  max-height: 200px;
-  width: 300px;
-  height: auto;
+  width: 100%;
   object-fit: contain;
   filter: none;
   transition: transform 0.25s ease-in-out;
@@ -879,9 +871,8 @@ main {
 }
 
 .timeline-list {
-  color: var(--light-gray);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
+  font-size: var(--fs-6);
+  margin-left: 45px;
 }
 
 .timeline-list li {
@@ -890,6 +881,11 @@ main {
 
 .timeline-item {
   position: relative;
+}
+
+.timeline-item ul {
+  margin-top: 15px;
+  padding-left: 0px;
 }
 
 .timeline-item:not(:last-child) {
@@ -1552,9 +1548,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 120px;
   }
 
   .info-content .name {
@@ -1752,11 +1746,6 @@ textarea.form-input::-webkit-resizer {
 
   .skills-item:not(:last-child) {
     margin-bottom: 25px;
-  }
-
-  .timeline-item ul {
-    margin-top: 15px;
-    padding-left: 0px;
   }
 
 
@@ -1996,7 +1985,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .navbar {
-    position: sticky;
+    position: absolute;
     bottom: auto;
     top: 0;
     left: auto;
