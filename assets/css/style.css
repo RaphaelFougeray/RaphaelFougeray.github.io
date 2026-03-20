@@ -885,7 +885,7 @@ main {
 
 .timeline-item ul {
   margin-top: 15px;
-  margin-left: 5px;
+  margin-left: 10px;
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1985,7 +1985,7 @@ textarea.form-input::-webkit-resizer {
 
   .navbar {
     position: sticky;
-    bottom: auto;
+    bottom: 20px;
     top: 0;
     left: 0;
     right: 0;
