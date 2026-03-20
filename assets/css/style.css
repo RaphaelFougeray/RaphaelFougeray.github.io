@@ -363,7 +363,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border: 2px solid var(--orange-yellow-crayola);
-  border-radius: 50px;
+  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -885,7 +885,7 @@ main {
 
 .timeline-item ul {
   margin-top: 15px;
-  padding-left: -60px;
+  margin-left: -60px;
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1544,10 +1544,6 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar-info {
     gap: 25px;
-  }
-
-  .avatar-box {
-    border-radius: 50px;
   }
 
   .avatar-box img {
