@@ -494,7 +494,8 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 0;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1981,7 +1982,6 @@ textarea.form-input::-webkit-resizer {
     position: relative;
     width: max-content;
     margin: auto;
-    padding-top: 80px;
   }
 
 
