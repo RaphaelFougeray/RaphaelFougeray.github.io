@@ -1731,7 +1731,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .timeline-list {
-    margin-left: 20px;
+    margin-left: 65px;
   }
 
   .timeline-item:not(:last-child)::before {
@@ -1750,6 +1750,7 @@ textarea.form-input::-webkit-resizer {
 
   .timeline-item ul {
     margin-top: 15px;
+    padding-left: 10px;
   }
 
 
